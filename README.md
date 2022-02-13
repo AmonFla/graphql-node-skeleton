@@ -1,24 +1,32 @@
 # API GraphQL
 
-Template creado para implementar una api GraphQL. Para agregar los endpoints se trabaja con la carpeta definitions y controllers. 
-Dentro de definitions se deben ir agragando las definiciones y resolvers de cada entidad a manejar.
-## Instalación de paquetes
+Template created for implementing a GraphQL api. 
+
+## Use
+
+To add the endpoints, work with the definitions and controllers folder.
+
+Within definitions, the definitions and resolvers of each entity to be handled must be added.
+
+You can see example code
+
+## Packae install
 
 npm install
 
-## Compilación para desarrollo
+## Build for Development
 
 npm run build:dev
 
-## Ejecución para desarrollo
+## Execution for Development
 
 npm run dev
 
-## Compilación para producción
+## Build for production
 
 npm run build
 
-## Ejecución para producción
+## Execution for production
 
 npm start
 
