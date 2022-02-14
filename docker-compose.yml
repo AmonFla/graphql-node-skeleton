@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+  graphql:
+    image: graphql-dev
+    build: .
+    volumes:
+      - ./src:/usr/src/app/src/ 
+    ports:
+      - 5000:5000
+    container_name: graphql-dev
+    environment:
+      - NODE_ENV=development
+      - PORT=5000 
+     
