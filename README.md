@@ -6,9 +6,7 @@ Template created for implementing a GraphQL api.
 
 To add the endpoints, work with the definitions and controllers folder.
 
-Within definitions, the definitions and resolvers of each entity to be handled must be added.
-
-You can see example code al `example` branch, it's use postgres and docker 
+Within definitions, the definitions and resolvers of each entity to be handled must be added, you can see user example.
 
 ## Packae install
 
