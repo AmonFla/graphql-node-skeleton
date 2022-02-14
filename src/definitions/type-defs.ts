@@ -1,5 +1,5 @@
 import { gql } from 'apollo-server-express';
-import user from './user';
+import user from './custom/user';
 
 export default gql`
 
@@ -10,6 +10,7 @@ export default gql`
     Test Message. 
     """
     testMessage: String!  
+    ${user.type.query}
   }
 
   type Mutation{

@@ -8,7 +8,7 @@ To add the endpoints, work with the definitions and controllers folder.
 
 Within definitions, the definitions and resolvers of each entity to be handled must be added.
 
-You can see example code
+You can see example code al `example` branch, it's use postgres and docker 
 
 ## Packae install
 

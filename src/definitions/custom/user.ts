@@ -1,5 +1,5 @@
 import { UserInputError } from 'apollo-server-errors';
-import { userLogin } from '../controllers/user';
+import { userLogin } from '../../controllers/user';
 
 export default {
   type: {
@@ -9,6 +9,12 @@ export default {
             }   
     
         `,
+    query: `
+    """
+          Obtener la información almacenada en el token.
+          """
+          me: String!
+    `,
     mutation: `
             """
                 User Login
@@ -21,6 +27,9 @@ export default {
 
   },
   resolver: {
+    query: {
+      me: (_root: any, _args: any, context: any) => context.currentUser.username
+    },
     mutation: {
       login: async (_root: any, args:any) => {
         try {
